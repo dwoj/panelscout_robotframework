@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on darwin)" generated="20230430 13:35:45.533" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Change Language Login Page Rf" source="/Users/dev/Documents/GitHub/panelscout_robotframework_/test_change_language_login_page_rf.robot">
+<test id="s1-t1" name="Change language on the login page" line="14">
+<kw name="Open login page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230430 13:35:45.663" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230430 13:35:45.662" endtime="20230430 13:35:48.095"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel - sign in</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230430 13:35:48.099" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230430 13:35:48.095" endtime="20230430 13:35:48.099"/>
+</kw>
+<status status="PASS" starttime="20230430 13:35:45.662" endtime="20230430 13:35:48.099"/>
+</kw>
+<kw name="Click on the language selector">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LANGUAGESELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230430 13:35:48.100" level="INFO">Clicking element 'xpath=//div[2]/div/div'.</msg>
+<status status="PASS" starttime="20230430 13:35:48.099" endtime="20230430 13:35:48.144"/>
+</kw>
+<status status="PASS" starttime="20230430 13:35:48.099" endtime="20230430 13:35:48.144"/>
+</kw>
+<kw name="Click on English language">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ENGVERSION}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230430 13:35:48.145" level="INFO">Clicking element 'xpath=//li[1]'.</msg>
+<status status="PASS" starttime="20230430 13:35:48.144" endtime="20230430 13:35:48.196"/>
+</kw>
+<status status="PASS" starttime="20230430 13:35:48.144" endtime="20230430 13:35:48.196"/>
+</kw>
+<kw name="Click on the language selector">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LANGUAGESELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230430 13:35:48.197" level="INFO">Clicking element 'xpath=//div[2]/div/div'.</msg>
+<status status="PASS" starttime="20230430 13:35:48.197" endtime="20230430 13:35:48.460"/>
+</kw>
+<status status="PASS" starttime="20230430 13:35:48.196" endtime="20230430 13:35:48.460"/>
+</kw>
+<kw name="Click on Polish language">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PLVERSION}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230430 13:35:48.461" level="INFO">Clicking element 'xpath=//li[2]'.</msg>
+<status status="PASS" starttime="20230430 13:35:48.460" endtime="20230430 13:35:48.508"/>
+</kw>
+<status status="PASS" starttime="20230430 13:35:48.460" endtime="20230430 13:35:48.508"/>
+</kw>
+<kw name="Assert Sign in button in login page">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${SIGNINBUTTON}</arg>
+<arg>SIGN IN</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230430 13:35:48.509" level="INFO">Verifying element 'xpath=//*[contains(@class, 'MuiButton-label')]' contains exact text 'SIGN IN'.</msg>
+<status status="PASS" starttime="20230430 13:35:48.509" endtime="20230430 13:35:48.529"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>alert.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230430 13:35:48.861" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230430 13:35:48.529" endtime="20230430 13:35:48.861"/>
+</kw>
+<status status="PASS" starttime="20230430 13:35:48.508" endtime="20230430 13:35:48.861"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230430 13:35:48.861" endtime="20230430 13:35:48.938"/>
+</kw>
+<status status="PASS" starttime="20230430 13:35:45.662" endtime="20230430 13:35:48.938"/>
+</test>
+<doc>Suite description #automated test for scout website</doc>
+<status status="PASS" starttime="20230430 13:35:45.534" endtime="20230430 13:35:48.939"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Change Language Login Page Rf">Test Change Language Login Page Rf</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

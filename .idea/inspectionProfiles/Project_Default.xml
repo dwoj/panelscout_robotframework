@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="test_cases.login_to_the_system.TestLoginPage.driver" />
+          <option value="test_cases.open_add_player_form.TestAddPlayer.driver" />
+          <option value="test_cases.framework.TestMediumPage.driver" />
+          <option value="test_cases.framework.Test.driver" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
