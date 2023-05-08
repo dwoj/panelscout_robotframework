@@ -3,12 +3,13 @@ Library    SeleniumLibrary
 Documentation    Suite description #automated test for scout website
 
 *** Variables ***
-${LOGIN URL}        https://scouts-test.futbolkolektyw.pl/en
+${LOGIN URL}        https://scouts.futbolkolektyw.pl/en/
 ${BROWSER}      Chrome
 ${SIGNINBUTTON}     xpath=//*[contains(@class, 'MuiButton-label')]
 ${EMAILINPUT}       xpath=//*[@id='login']
 ${PASSWORDINPUT}        xpath=//*[@id='password']
 ${LOGININPUT}   xpath=//*[@id='login']
+${MAINTITLE}    xpath=//h5
 
 *** Test Cases ***
 Login to the system with invalid data
@@ -32,5 +33,6 @@ Click on the Sign in button
 Assert login page
     Wait Until Element Is Visible    ${LOGININPUT}
     Title Should Be    Scouts panel - sign in
+    Element Text Should Be      ${MAINTITLE}    Scouts panel
     Capture Page Screenshot    alert.png
 

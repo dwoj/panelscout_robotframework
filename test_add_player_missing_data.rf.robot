@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 Documentation    Suite description #automated test for scout website
 
 *** Variables ***
-${LOGIN URL}        https://scouts-test.futbolkolektyw.pl/en
+${LOGIN URL}        https://scouts.futbolkolektyw.pl/en/
 ${BROWSER}      Chrome
 ${SIGNINBUTTON}     xpath=//*[contains(@class, 'MuiButton-label')]
 ${EMAILINPUT}       xpath=//*[@id='login']
@@ -47,6 +47,7 @@ Click on the Add player button
     Wait Until Element Is Visible    ${PAGELOGO}
     Click Element   ${ADDPLAYERBUTTON}
 Type in Name
+    Wait Until Element Is Visible    ${NAMEINPUT}
     Input Text      ${NAMEINPUT}        Jan
 Type in Surname
     Input Text      ${SURNAMEINPUT}     Nowak
